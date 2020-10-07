@@ -59,13 +59,13 @@
             <arg path="${android.sdk}/android.jar" />
         </exec>
         
-        <javac source="1.7" target="1.7" destdir="../android/temp/classes" includeantruntime="false" debug="${ANDROID_DEBUG}">
+        <javac source="1.8" target="1.8" destdir="../android/temp/classes" includeantruntime="false" debug="${ANDROID_DEBUG}">
             <src path="${source.dir}"/>
             <src path="${gen.absolute.dir}"/>
             <classpath>
                 <pathelement location="${android.sdk}/android.jar"/>
                 <pathelement location="${air.sdk}/lib/android/FlashRuntimeExtensions.jar"/>
-                <pathelement location="../android/google-play-services_lib/libs/google-play-services.jar"/>
+                <pathelement location="../res/google-play-services.jar"/>
 
                 <pathelement location="../res/${appsflyer.sdk.lib}.jar"/>
                 <pathelement location="../res/json-simple-1.1.1.jar"/>

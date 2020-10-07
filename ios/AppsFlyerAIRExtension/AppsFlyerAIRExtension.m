@@ -143,7 +143,7 @@ BOOL didReceiveRemoteNotificationHandler(id self, SEL _cmd, UIApplication* appli
 
 AppsFlyerDelegate * conversionDelegate;
 
-DEFINE_ANE_FUNCTION(init)
+DEFINE_ANE_FUNCTION(init2)
 {
     NSString *developerKey = [AppsFlyerAIRExtension getString: argv[0]];
     NSString *appId = [AppsFlyerAIRExtension getString: argv[1]];
@@ -447,7 +447,7 @@ void AFExtContextInitializer(void* extData, const uint8_t* ctxType, FREContext c
     
     func[19].name = (const uint8_t*)"init";
     func[19].functionData = NULL;
-    func[19].function = &init;
+    func[19].function = &init2;
     
     func[20].name = (const uint8_t*)"stop";
     func[20].functionData = NULL;
